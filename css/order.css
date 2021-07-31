@@ -10,7 +10,7 @@ body{
   padding: 0;
 }
 .landing{
-  background-image: url("");
+  background-image: url("../Assets/PIZZA\ HD.jpg");
   background-position: center center;
   background-size: 1000px;
   background-repeat: no-repeat;
@@ -18,4 +18,14 @@ body{
   padding-bottom: 20px;
   position: relative;
   overflow-x: hidden;
+}
+#logo {
+	margin-left: 2em;
+}
+#text {
+  margin-left: 8em;
+	font-weight: 600;
+}
+#overlay #order {
+	margin-left: 10em;
 }
