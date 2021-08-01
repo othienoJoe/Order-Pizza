@@ -6,15 +6,20 @@ html,body,header,
   font-family: 'Eczar', serif;
 }
 body{
-  margin: 0;
-  padding: 0;
-}
-.landing{
   background-image: url("../Assets/PIZZA\ HD.jpg");
   background-position: center center;
   background-size: 1000px;
   background-repeat: no-repeat;
   background-attachment:fixed;
+  margin: 0;
+  padding: 0;
+}
+.landing {
+  /* background-image: url("../Assets/PIZZA\ HD.jpg");
+  background-position: center center;
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-attachment:fixed; */
   padding-bottom: 20px;
   position: relative;
   overflow-x: hidden;
@@ -29,9 +34,10 @@ body{
 #overlay #order {
 	margin-left: 10em;
 }
-/* ======================================== */
-.container {
-  
+/* ======================================== ================*/
+#MENUS {
+  font-weight: 600;
+  background-color: rgba(213, 215, 228, 0.555);
 }
 #menu {
   color: blue;
@@ -44,3 +50,79 @@ mark {
   font-style: italic;
   font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
+/* ======================================================= */
+.order-overlay{
+  background-color: rgba(236, 207, 74, 0.849);
+  padding-bottom: 20px;
+  box-shadow: 8px gray;
+}
+#Order-now {
+  color: blue;
+  font-weight: 600;
+  font-size: 2em;
+}
+#check {
+  margin-left: 15em;
+  font-weight: 600;
+}
+#pick {
+  margin-left: 3em;
+  font-weight: 800;
+}
+#firstTopping, #secondTopping {
+  margin-top: 2em;
+  font-weight: 600;
+}
+#information{
+  margin-right: 2em;
+  padding-top: 5%;
+  font-size: 22px;
+  color: #3700ff;
+}
+#choice{
+  display: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.choice h2{
+  color:orange;
+  text-align: left;
+}
+td,th{
+  font-size: 20px;
+  color: blue;
+}
+#address {
+  display: none;
+}
+#delivery{
+  display: none;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#orderMade{
+  color: white;
+  font-size: 30px;
+}
+#addedPrice{
+  display: none;
+}
+#finalMessage{
+  display: none;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 28px;
+}
+/* @media screen (max-width: 485px){
+  .container {
+    flex-direction: column;
+  }
+}
+@media screen (max-width: 767px){
+  .section {
+    padding-top: 30px;
+}
+.flex-xs-column {
+    flex-direction: column;
+} */
