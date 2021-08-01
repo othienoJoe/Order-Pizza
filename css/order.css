@@ -31,9 +31,6 @@ body{
   margin-left: 8em;
 	font-weight: 600;
 }
-#overlay #order {
-	margin-left: 10em;
-}
 /* ======================================== ================*/
 #MENUS {
   font-weight: 600;
@@ -62,6 +59,7 @@ mark {
   font-size: 2em;
 }
 #check {
+  color: #3700ff;
   margin-left: 15em;
   font-weight: 600;
 }
@@ -126,3 +124,23 @@ td,th{
 .flex-xs-column {
     flex-direction: column;
 } */
+/* =========================================================== */
+.copyright {
+	text-align: center;
+	background-color: aquamarine;
+	height: 4.5em;
+}
+#place {
+  font: 2em sans-serif;
+	font-weight: 600;
+}
+.copyright span {
+	color: red;
+	font-weight: 1000;
+	font-size: 20px;
+}
+
+#contact{
+  color: aliceblue;
+  background-color: rgba(18, 17, 114, 0.911);
+}
