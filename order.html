@@ -43,17 +43,17 @@
           <tbody>
             <tr>
               <th scope="row">Large @Ksh.1200</th>
-              <td><mark>Pepperoni</mark> @Ksh.150</td>
+              <td><mark>Pepperoni</mark> @Ksh.100</td>
               <td><mark>Pizza Bagels</mark> @Ksh.250</td>
             </tr>
             <tr>
               <th scope="row"></th>
-              <td><mark>Mushrooms</mark> @Ksh.180</td>
+              <td><mark>Mushrooms</mark> @Ksh.100</td>
               <td><mark>Cheese-Stuffed</mark> @Ksh.300</td>
             </tr>
             <tr>
 							<th scope="row">Medium@Ksh.850</th>
-              <td><mark>Bacon</mark> @Ksh.150</td>
+              <td><mark>Bacon</mark> @Ksh.100</td>
               <td><mark>Sicilian</mark> @Ksh.230</td>
             </tr>
             <tr>
@@ -63,7 +63,7 @@
             </tr>
             <tr>
 							<th scope="row">Small@Ksh.650</th>
-              <td><mark>Sausage</mark> @Ksh.130</td>
+              <td><mark>Sausage</mark> @Ksh.100</td>
               <td><mark>Thick</mark> @Ksh.200</td>
             </tr>
             <tr>
@@ -73,7 +73,7 @@
             </tr>
             <tr>
               <th scope="row"></th>     
-              <td><mark>Black Olives</mark> @Ksh.200</td>
+              <td><mark>Black Olives</mark> @Ksh.100</td>
 							<td><mark>Neapolitan</mark> @Ksh.350</td>
             </tr>
           </tbody>
@@ -121,9 +121,9 @@
 								<label for="select">Choose your favorite Crust!</label>
 							<select class="browser-default custom-select custom-select-md mb-3" id="crust">
 								<option selected value="0">Select Your Preferred Crust!</option>
-								<option value="Crispy">Pizza Bagels -- Ksh.250</option>
-								<option value="Stuffed">Cheese-Stuffed -- sh. 300</option>
-								<option value="Gluten-free">Sicilian -- sh. 230</option>
+								<option value="Pizza Bagels">Pizza Bagels -- Ksh.250</option>
+								<option value="Cheese-Stuffed">Cheese-Stuffed -- sh. 300</option>
+								<option value="Sicilian">Sicilian -- sh. 230</option>
 								<option value="Margherita">Margherita -- Ksh. 300</option>
 								<option value="Neapolitan">Neapolitan -- Ksh. 350</option>
 								<option value="Thick">Thick -- Ksh. 200</option>
@@ -161,7 +161,7 @@
 									<label class="custom-control-label" for="peppers">Green Peppers</label>
 								</div>
 								<br><br>
-                <button type="submit" class="btn btn-info proceed">Proceed</button>
+                <button type="submit" class="btn btn-info" id="proceed">Proceed</button>
 							</div>
 						</div>
             
@@ -179,9 +179,9 @@
   					</figcaption>
 					</figure>
           <div class="text-end" id="choice">
-            <h2>Your Order is:</h2>
+            <h2>This is Your Order :</h2>
             <div id="orderMade">
-              <table class="table table-sm  pizzatable">
+              <table class="table table-sm" id="pizzaTable">
                 <thead>
                   <tr>
                     <th scope="col">Name</th>
@@ -197,7 +197,7 @@
                     <td id="pizzaSize"></td>
                     <td id="pizzaCrust"></td>
                     <td id="pizzaTopping"></td>
-                    <td id="totals"></td>
+                    <td id="total"></td>
                   </tr>                  
                 </tbody>
               </table>
@@ -206,7 +206,7 @@
               <p id="addedPrice">Delivery will cost Ksh. 150 Only!</p>
               <p id="finalMessage"></p>
             </div>
-              <button class="btn btn-orange addPizza">Add Pizza</button>
+              <button class="btn btn-orange" id="addPizza">Add Pizza</button>
               <button class="btn btn-orange" id="checkout">Checkout</button>
               <button class="btn btn-orange" id="address">Home delivery?</button>
             </div>
@@ -216,7 +216,7 @@
                   <input type="text" id="name" class="form-control mb-3" placeholder="Name">
                   <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
                   <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                  <button class="btn btn-orange" id="final-order">Place Order</button>
+                  <button class="btn btn-orange" id="finalOrder">Place Order</button>
                 </div>
               </form>
             </div>
@@ -233,6 +233,9 @@
      	<h4>Copyright: <span>&copy;</span> 2021 ; All Rights Reserved!</h4>
     </div>
 	</footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<script src="order.js"></script>
 </body>
 </html>
